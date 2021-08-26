@@ -223,14 +223,14 @@ In this exercise I will create a parameterized report of COVID-19 cases and deat
 <span id="cb37-6"><a href="covid-19-parameterized-report.html#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
 <span id="cb37-7"><a href="covid-19-parameterized-report.html#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">&quot;recorded COVID-19 cases in&quot;</span>, country),</span>
 <span id="cb37-8"><a href="covid-19-parameterized-report.html#cb37-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/covid%20cases-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/covid%20cases-1.png" width="672" /></p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="covid-19-parameterized-report.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plotting the graph</span></span>
 <span id="cb38-2"><a href="covid-19-parameterized-report.html#cb38-2" aria-hidden="true" tabindex="-1"></a>COVID_filter <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb38-3"><a href="covid-19-parameterized-report.html#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> dateRep, <span class="at">y =</span> deaths), <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
 <span id="cb38-4"><a href="covid-19-parameterized-report.html#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
 <span id="cb38-5"><a href="covid-19-parameterized-report.html#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">&quot;Recorded COVID-19 deaths in&quot;</span>, country),</span>
 <span id="cb38-6"><a href="covid-19-parameterized-report.html#cb38-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/covid%20deaths-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/covid%20deaths-1.png" width="672" /></p>
 
 </div>
             </section>
