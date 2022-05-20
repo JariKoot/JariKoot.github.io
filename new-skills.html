@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title># New skills | Portofolio Book</title>
   <meta name="description" content="# New skills | Portofolio Book" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="# New skills | Portofolio Book" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Jari Koot" />
 
 
-<meta name="date" content="2021-08-19" />
+<meta name="date" content="2022-05-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="looking-ahead.html"/>
 <link rel="next" href="relational-databases.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -42,7 +43,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -120,6 +120,28 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 </head>
 
@@ -134,14 +156,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="elegans-experiment.html"><a href="elegans-experiment.html"><i class="fa fa-check"></i># Elegans experiment</a></li>
-<li class="chapter" data-level="" data-path="review-of-an-article.html"><a href="review-of-an-article.html"><i class="fa fa-check"></i># Review of an article</a></li>
+<li class="chapter" data-level="" data-path="elegans-experiment.html"><a href="elegans-experiment.html"><i class="fa fa-check"></i>Elegans experiment</a></li>
+<li class="chapter" data-level="" data-path="review-of-an-article.html"><a href="review-of-an-article.html"><i class="fa fa-check"></i>Review of an article</a></li>
 <li class="chapter" data-level="" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html"><i class="fa fa-check"></i># Guerrilla analytics</a></li>
 <li class="chapter" data-level="" data-path="jaris-cv.html"><a href="jaris-cv.html"><i class="fa fa-check"></i># Jari’s CV</a></li>
-<li class="chapter" data-level="" data-path="looking-ahead.html"><a href="looking-ahead.html"><i class="fa fa-check"></i># Looking ahead</a></li>
+<li class="chapter" data-level="" data-path="looking-ahead.html"><a href="looking-ahead.html"><i class="fa fa-check"></i>Looking ahead</a></li>
 <li class="chapter" data-level="" data-path="new-skills.html"><a href="new-skills.html"><i class="fa fa-check"></i># New skills</a></li>
-<li class="chapter" data-level="" data-path="relational-databases.html"><a href="relational-databases.html"><i class="fa fa-check"></i># Relational databases</a></li>
-<li class="chapter" data-level="" data-path="covid-19-parameterized-report.html"><a href="covid-19-parameterized-report.html"><i class="fa fa-check"></i># COVID-19 parameterized report</a></li>
+<li class="chapter" data-level="" data-path="relational-databases.html"><a href="relational-databases.html"><i class="fa fa-check"></i>Relational databases</a></li>
+<li class="chapter" data-level="" data-path="covid-19-parameterized-report.html"><a href="covid-19-parameterized-report.html"><i class="fa fa-check"></i>COVID-19 parameterized report</a></li>
 </ul>
 
       </nav>
@@ -162,10 +184,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="new-skills" class="section level1 unnumbered">
 <h1># New skills</h1>
 <blockquote>
-<p><strong>About the exercise</strong></p>
+<p><strong>Project skills</strong></p>
 </blockquote>
 <p><br>
-In this Rmarkdown file I will explain the new skills I learned (this is mentioned in the previous chapter). The goal is to learn a new skill in 4 days of self study, I decided to divide my 4 days in to 2x2 days to learn the following skills:</p>
+In the previous chapters I explained the new skills that I have learned during my minor courses. In this chapter I show you the skills that I have learned during my project and tell you my future plans.
+<br><br>
+The project I have worked on is called the Waternet project, commisioned by Waternet.It’s aim is to get insight in the bacterial composition of Waternet’s water, before and after the filtering steps.
+The project was initially handled by a group of microbiology students. Both mock solutions and samples were used for determination, the latter as a control on the determination process.
+After concluding they had insufficient resources to properly determine the composition of the samples, the samples were sent to a company that performed whole genome sequencing on them.
+This sequencing technique is starting to become a widely used method in clinical diagnostics and general microbial research <span class="citation">(Gautam et al. 2019)</span>. In the field of microbial water quality testing, detection methods that target nucleic acids have expanded the view on the microbial world <span class="citation">(Vierheilig et al. 2015)</span>.
+<br><br>
+As a continuation of this project, a group of data science students (our project group: Shervin, Jari, Irene) were assigned the task of coming up with a way of determining the bacterial composition of both samples, based on the WGS data. We did this by using multiple packages in Rstudio. The main determination package was BLAST+. This software package is a good choice for working with long database sequences<span class="citation">(Camacho et al. 2009)</span>.We used this package to search genetic sequence data bases with the Bioconductor infrastructure. After that we used kSNP3 SNP detection and phylogenetic analysis of genomes without a reference genome to determine the composition of the Waternet samples <span class="citation">(Shea N. Gardner, Slezak, and Hall 2015; Shea N. Gardner and Hall 2013)</span></p>
+<p><strong>For more information about the project visit our <a href="https://github.com/ProjecticumDataScience/Project-1-Waternet">GitHub</a> page.</strong></p>
+<hr />
+<blockquote>
+<p><strong>Spend my time comming weeks</strong></p>
+</blockquote>
+<p><br>
+Besides the things that I have already learned we will also be taking a look into the future. The goal is to learn a new skill in 4 days of self study, I decided to divide my 4 days in to 2x2 days to learn the following skills:</p>
 <ul>
 <li>Microbiota analysis (<a href="https://rstudio-pubs-static.s3.amazonaws.com/268156_d3ea37937f4f4469839ab6fa2c483842.html#other_visualizations">link to the workflow</a>)</li>
 <li>Shiny (<a href="https://mastering-shiny.org/basic-app.html">link to the workflow</a>)
@@ -183,17 +219,8 @@ In this Rmarkdown file I will explain the new skills I learned (this is mentione
 <blockquote>
 <p><strong>Shiny</strong></p>
 </blockquote>
-<p>The second skill I will learn about is Shiny. Shiny is a package that can be installed in Rstudio, it makes it easy to build interactive web apps straight from Rstudio. To show the plots you created in a project it is important that the figures are interpreted clearly and comprehensibly. Shiny gives you the opportunity to do this in an app with interactive plots. My goal of this workflow is to learn the basics of Shiny and make a small app that shows you the results of my last project in an interactive way. Below I will give you a quick introduction of my last project.
-<br></p>
-<hr />
-<blockquote>
-<p><strong>Summary of my last project</strong></p>
-</blockquote>
-<p>The data used in this workflow is from my last project. Here is a short summary of the project:</p>
-<p><em>The Waternet project is a project commissioned by Waternet. It’s aim is to get insight in the bacterial composition of Waternet’s water, before and after filtering. The project was initially handled by a group op microbiology students. Both mock solutions and samples were used for determination, the latter as a control on the determination process. After concluding they had insufficient resources to properly determine the composition of the samples, the samples were sent to a company that performed whole genome sequencing on them. As a continuation of this project, a group of data science students (us) were assigned the task of coming up with a way of determining the bacterial composition of both samples, based on the WGS data.</em></p>
-<p><strong>For more information about the project visit our <a href="https://github.com/ProjecticumDataScience/Project-1-Waternet">GitHub</a> page.</strong>
-<br><br>
-The samples I am going to analyse are the first 10 000 reads of the pre and post sample (this will be ajustable via the interface). I am gonna visualize them in different ways so that the data will be understandable to interpret. If you are working with Shiny it’s a good idea to start with a sketch. In the image below you can see mine.
+<p>The second skill I will learn about is Shiny. Shiny is a package that can be installed in Rstudio, it makes it easy to build interactive web apps straight from Rstudio. To show the plots you created in a project it is important that the figures are interpreted clearly and comprehensibly. Shiny gives you the opportunity to do this in an app with interactive plots. My goal of this workflow is to learn the basics of Shiny and make a small app that shows you the results of my last project in an interactive way. Below I will give you a quick introduction of my last project.</p>
+<p>The samples I am going to analyse are the first 10 000 reads of the pre and post sample (this will be ajustable via the interface). I am gonna visualize them in different ways so that the data will be understandable to interpret. If you are working with Shiny it’s a good idea to start with a sketch. In the image below you can see mine.
 <br></p>
 <p><img src="images/shiny_sketch.jpg" width="400px" height="600px" /></p>
 <hr />
@@ -213,7 +240,6 @@ The samples I am going to analyse are the first 10 000 reads of the pre and post
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -253,6 +279,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
